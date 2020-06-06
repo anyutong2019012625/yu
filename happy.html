@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <style>
+    *{
+    	padding:0;
+    	margin:0;
+    }
+    a {
+	    text-decoration: none;
+    }
+    ul {
+	    list-style-type: none;
+    }
+    .clear:after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    img {
+ 	    vertical-align: bottom;
+    }
+   .fl {
+        float: left;
+    }
+   .fr {
+        float: left;
+    }
+   .friend{
+	   width: 100%;
+	   text-align: center;
+	   margin: 0 auto;
+	   background-color:white;
+	   width: 100%;
+	   height: 100px;
+    }
+   .friend-part{
+	   float: left;
+    }
+   .logo{
+	   float: left;
+	   font-size:50px;
+       font-family:myfont;
+       font-weight:bold;
+       color:rgba(155,100,200,1);
+       margin-top: 10px;
+       margin-left:50px;
+    }
+   .nav{
+       font-size:22px;
+       font-family:Microsoft JhengHei;
+       color:rgba(5,5,5,1);
+       width: 400px;
+       text-align: center;
+	   margin: 0 auto;
+    }
+   .nav li{
+ 	   float: left;
+ 	   padding-bottom: 10px;
+ 	   margin-right: 20px;
+ 	   margin-top:35px;
+    }  
+   .first{
+ 	   margin-left: 60px;
+    }
+   .way{
+ 	   margin-top:30px;
+ 	   margin-left: 40px;
+    }
+   .way * {
+       float: left;
+    }
+   .way .search {
+      width: 300px;
+      height: 40px;       
+    }
+   .way .submit {
+      width: 50px;
+      text-align: center;
+	  margin: 0 auto;
+      height: 42px;
+      background-color: rgba(155,100,200,1);
+      background-image: url(pic/search.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .me{
+    	float: right;
+    	font-size:20px;
+        font-family:Microsoft JhengHei;
+        font-weight:400;
+        color:rgba(5,5,5,1);
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+    .banner img{
+    	width: 1200px;
+	    height: 500px;
+    }
+    .banner{
+	    width: 100%;
+	    text-align: center;
+	    margin: 0 auto;
+	    height: 500px;
+	    position: relative;
+	    display: inline-block;
+	    background-color: rgba(215,182,193,1);
+    }
+    .smile{
+	    position: absolute;
+	    width:1200px;
+	    text-align: center;
+	    margin: 0 auto;
+        height:250px;
+        background-color:rgba(215,182,193,0);
+        opacity:0.3;
+        bottom: 250px;
+        margin-left: 120px;
+    }
+  	.smile li{
+  		height: 15px;
+	    margin-top: 60px;
+	    padding-right:650px;
+    }
+    .smile a{
+    	color:rgb(139,0,139);
+	    font-size: 40px;
+    }
+    .smile li:hover>a{
+	    color:rgba(255,140,0,1);
+    }
+    .find{
+	    background-color:white;
+	    width: 100%;
+	    height: 100px;
+	    padding-top: 0px;
+    }
+    .sun li{
+	    float: left;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    background-color:white;
+	    margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .qin{
+	    float: left;
+        font-size:50px;
+        color:rgba(73,73,73,1);
+        margin-left: 25px;
+    }	    
+    
+    .sun a{	
+    	font-size:20px;
+        font-family:Microsoft JhengHei;
+        font-weight:400;
+        color:purple;
+        margin-top: 25px;
+        float: right;
+        margin-left: 930px;
+    }
+    .find li:hover>a{
+	    color:rgba(0, 164, 255, 1);
+    }
+    
+   .coach{
+	    width: 100%;
+	    background-color: white;
+	    padding-top: 5px;
+    }
+    .jr{
+        width: 285px;
+        height: 400px;
+        margin: 0px 8px;
+    }
+   .refer{
+	    position: relative;
+	    display: inline-block;
+	    margin-left: 40px;
+    }
+   .courage{
+	   position: absolute;
+	   bottom: 0px;
+	   color: white;
+	   width: 285px;
+	   background:rgba(0,0,0,1);
+       opacity:0.5;
+       margin-left:8px;
+       margin-right:10px;
+       font-size: 15px;
+    }
+   .coach span{
+	   font-size: 20px;
+	   color: white;
+	   padding-left: 25px;
+	   padding-right: 25px;
+    }
+   .coach .name{
+	   margin-top: 5px;
+    }
+
+    .brother{
+	    background-color:white;
+	    width: 100%;
+	    height: 100px;
+	    padding-top: 0px;
+    }
+    .moon li{
+	    float: left;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    background-color:white;
+	    margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .moon{
+	    float: left;
+        font-size:50px;
+        color:rgba(73,73,73,1);
+        margin-left: 25px;
+    }	
+    .moon a{	
+    	font-size:20px;
+        font-family:Microsoft JhengHei;
+        font-weight:400;
+        color:purple;
+        margin-top: 25px;
+        float: right;
+        margin-left: 950px;
+    }
+    .brother li:hover>a{
+	    color:rgba(0, 164, 255, 1);
+    }    
+    .aim img{
+	    float: left;
+	    padding-left: 5px;
+	    padding-top: 10px;
+	    padding-bottom: 50px;
+    }
+   .aim{
+	    width: 100%;
+	    background-color: white;
+	    padding-top: 5px;
+    }
+    .bili img{
+        width: 394px;
+        height: 290px;
+        margin-left: 15px;
+    }
+   .people img{
+        width: 190px;
+        height: 290px;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+   .people{
+	    position: relative;
+	    display: inline-block;
+    }
+   .brieve{
+	   position: absolute;
+	   bottom: 50px;
+	   color: white;
+	   width: 190px;
+	   background:rgba(0,0,0,1);
+       opacity:0.5;
+       margin-left:25px;
+       margin-right:10px;
+       font-size: 15px;
+    }
+   .aim span{
+	   font-size: 20px;
+	   color: white;
+	   padding-left: 25px;
+	   padding-right: 25px;
+    }
+   .aim .name{
+	   margin-top: 5px;
+    }
+   .wan{
+	   padding-left: 20px;
+	   padding-right: 20px;
+	   margin-bottom: 10px;
+	   margin-top: 10px;
+    }
+   .face{
+    	background-color:rgba(255,182,193,1);
+    }
+   .b {
+	   float: left;
+	   margin-left: 120px;
+	   margin-top: 100px;
+	   margin-bottom: 100px;
+    }
+   h2{
+	   font-size:36px;
+       font-weight:bold;
+       color:purple;
+       line-height:10px;
+    }
+   .push{
+	   padding: 20px 30px;
+	   border: 1px solid purple;
+	   margin-top: 10px;
+    }
+   .b a{
+	   font-size: 15px;
+	   color:purple;
+    }
+   .c{
+	   float: left;
+	   margin-top: 100px;
+	   padding-left: 80px;
+    }
+   .c p{
+	  font-size: 25px;
+	  color: purple;
+    }
+   .c a{
+	  font-size: 15px;
+	  color: purple;
+   }
+   .start{
+	  margin-left: 100px;
+   }
+   .feel{
+    	width: 1400px;
+	    height: 600px;
+    }
+   .word{
+	    width: 100%;
+	    text-align: center;
+	    margin: 0 auto;
+	    height: 500px;
+	    position: relative;
+	    display: inline-block;
+	    padding-top:0px ;
+    }
+    .zi{
+	    position: absolute;
+	    width:1200px;
+	    text-align: center;
+	    margin: 0 auto;
+        height:250px;
+        background-color:rgba(215,182,193,0);
+        opacity:0.3;
+        bottom: 200px;
+        margin-left: 500px;
+    }
+    .zi li{
+  		height: 15px;
+	    margin-top: 60px;
+	    padding-right:650px;
+    }
+    .zi p{
+	    font-size: 25px;
+	    color: black;
+    }
+    .c li:hover>a{
+	    color:rgba(255,165,0,1);
+    }
+    .b li:hover>a{
+	    color:red;
+    }
+	</style>
+    </head>
+    <body style="overflow:Scroll;overflow-x:hidden">
+    <div class="friend">
+     <div class="friend-part clear">
+      <div class="logo">
+      	<p>我的驾校生活</p></div>
+      	<ul class="nav fl clear">
+      		<li class="first"><a href="#">首页</a></li>
+      		<li><a href="#">科一</a></li>
+      		<li><a href="#">科二</a></li>
+      		<li><a href="#">科三</a></li>
+      		<li><a href="#">科四</a></li>
+      	</ul>
+      	<way class="way fr clear">
+      		<input type="text" placeholpicsr="请搜索美好时光" class="search" />
+      		<input type="button" class="submit" />
+      	</way>
+      	<ul class="me">
+      		<li><a href="#">个人中心</a></li>
+      	</ul>
+      </div>
+     </div>
+     <div class="banner">
+     	<img src="pic/one.jpg" alt=" ">
+        <ul class="smile">
+        	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆一起学车☆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;☺一起大笑☺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;❁一起吃饭❁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;❤一起考试❤&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;☀一起玩耍☀&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        </ul>
+     </div> 
+     <div class="find">
+     	<ul class="sun clear">
+     		<li class="qin">MY Coaches</li>
+     		<li><a href="#">查看全部</a></li>
+     	</ul>
+     </div>
+     <div class="coach">
+     	<ul>
+     		<div class="refer clear">
+     			<li><img src="pic/two.jpg"></li>
+     		</div>
+        <div class="refer">
+            	<li>
+            	<img src="pic/nine.jpg" class="jr clear">
+                </li>
+          <div class="courage">
+            <li>
+            <ul>
+        	    <li class="name"><span>崔庙阜兴驾校</span>金牌教练</li>
+            </ul>
+            </li>
+          </div>
+        </div>
+        <div class="refer">
+        	  <li>
+        	  	<img src="pic/eleven.jpg" class="jr clear">
+        	  </li>
+        	  <div class="courage">
+        	  	<li>
+        	  	<ul>
+        	  		<li class="name"><span>崔庙阜兴驾校</span>金牌教练</li>
+        	  	</ul>
+        	    </li>
+        	  </div>
+        </div>
+       <div class="refer clear">
+     			<li><img src="pic/four.jpg"></li>
+     		</div>
+        </ul>
+	</div>
+  	  <div class="brother">
+  	  	<ul class="moon">
+  	  		<li class="fen">MY Friends</li>
+  	  		<li><a href="#">查看全部</a></li>
+  	  	</ul>
+  	  </div>
+      <div class="aim">
+        <ul>
+	      <div class="bili">
+            <li>
+            <img src="pic/twlve.jpg"></li>
+          </div>
+		<div class="people"> 
+		    <li>
+            <img src="pic/six.jpg" class="js">
+            </li>
+          <div class="brieve">
+            <li>
+            <ul>
+        	    <li class="name"><span>付晓蒙</span>大姐姐</li>
+                <li class="wan">可盐可甜美少女</li>
+            </ul>
+            </li>
+         </div>
+       </div>
+	   <div class="people">
+            <li>
+            <img src="pic/seven.jpg">
+            </li>
+          <div class="brieve">
+            <li>
+            <ul>
+        		  <li class="name"><span>郝红林</span>小姐姐</li>
+        		  <li class="wan">活泼幽默美少女</li>
+            </ul>
+            </li>
+          </div>
+       </div>
+	   <div class="people">
+            <li>
+           	<img src="pic/eight.jpg">
+            </li>
+         <div class="brieve">
+           <li>
+           <ul>
+        		  <li class="name"><span>孟繁兵</span>哥哥</li>
+        		  <li class="wan">爬树少年</li>
+           </ul>
+           </li>
+         </div>
+       </div>
+        <div class="people">
+            <li>
+           	<img src="pic/ten.jpg">
+            </li>
+         <div class="brieve">
+           <li>
+           <ul>
+        		  <li class="name"><span>井东旭</span>哥哥</li>
+        		  <li class="wan">修船少年</li>
+           </ul>
+           </li>
+         </div>
+       </div>
+        </ul>
+      </div>
+  	  <div class="word">
+     	<img src="pic/three.jpg" alt=" " class="feel">
+        <ul class="zi">
+        	<li><p>在这初夏这渐热的天气里，练车虽累但与你们一起的经历只有一次！</p></li>       	
+        	<li><p>你是否还记得邱教练迷人的笑声？你是否还想得刘教练慈祥的笑容？</p></li>
+        	<li><p>麦苗初长，我们相识；麦子丰收，我们分别。许久不见，甚是思念！</p></li>
+        </ul>
+     </div> 
+  	  <div class="face">
+	    <div class="b">
+		<ul>
+			<li><h2>崔庙阜兴驾校</h2></li>
+			<br>
+			<br>
+			<li><a href="#" class="push">点击心动</a></li>
+		</ul>
+	    </div>
+	    <div class="c">
+		<ul class="start">
+			<li><p class="head">青春有你</p></li>
+			<li><a href="#">开心色彩</a></li>
+			<li><a href="#">快乐时光</a></li>
+			<li><a href="#">愉快玩耍</a></li>
+		</ul>
+	    </div>
+        <div class="c">
+		<ul>
+			<li><p class="head">遇见你们，是我最美的意外！</p></li>
+			<li><a href="#">教练集</a></li>
+			<li><a href="#">朋友集</a></li>
+		</ul>
+		<p class="yours">2020,虽有疫情，但我能与你们相遇也是有很大的幸福！！！</p>
+	    </div>
+      </div>
+</body>
+</html>
